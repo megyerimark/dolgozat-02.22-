@@ -19,13 +19,20 @@ System.out.println("Megyeri Mark Mate");
 System.out.println("2022.02.22");
 System.out.println("Szoft I/N");
 
-System.out.print("a oldal:");
 
-Scanner sc = new Scanner(System.in); 
-
-int aoldal=sc.nextInt();
-
+Scanner sc = new Scanner(System.in);
+System.out.print("Magassag : ");
+double aoldal=sc.nextDouble();
 
 
+System.out.print("epulet szoge :");
+double szog=sc.nextDouble();
+ 
+
+
+
+double a=Math.sin(aoldal* Math.PI/180);
+double d = Math.sin(Math.toRadians(a));
+System.out.println("Elottunk levo epulet tavolsaga: "+ d);
 }
 }
